@@ -17,13 +17,13 @@ fun findMaxSumSlice(arr: IntArray): IntArray{
             end = i
         }
     }
-    // Получаем срез по заданным индексам для массива
+    // Получаем срез (часть массива) по заданным индексам
     return arr.slice(start..end).toIntArray()
 }
 
 fun main() {
     val b = intArrayOf(2, 5, 4, -71, 0, 8, -2, 4, 3, 0)
     val res = findMaxSumSlice(b)
-    println(res.joinToString()) // вывод массива в виде строки
-    println(res.sum()) // вывод макс. суммы
+    println(res.joinToString()) // Вывод массива в виде строки
+    println(res.sum()) // Вывод макс. суммы
 }
