@@ -17,7 +17,7 @@ fun findMaxSumSlice(arr: IntArray): IntArray{
             end = i
         }
     }
-    // Получаем срез по заданным индексам для массива
+    // Получаем срез (часть массива) по заданным индексам
     return arr.slice(start..end).toIntArray()
 }
 
